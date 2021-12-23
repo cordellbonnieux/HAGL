@@ -1,18 +1,66 @@
 import { hot } from 'react-hot-loader';
 import React from 'react';
 import './App.css';
-import Menu from './Menu';
 
-const siteName = 'Have A Good Laugh';
-const data = {
-  "menu": ["Tickets","Info","Contact"],
+function App() {
+  const data = {
+    siteName: 'Have A Good Laugh',
+    menu: ['Tickets', 'Info', 'Contact'],
+  };
+  return (
+    <div>
+      <p>{ data.siteName }</p>
+      <Menu tickets={data.menu[0]} info={data.menu[1]} contact={data.menu[2]} />
+      <Content />
+      <Footer />
+      <Background />
+    </div>
+  );
 }
 
-const App = (data) => (
-  <div className="App">
-    <h1>{siteName}</h1>
-    <Menu />
-  </div>
-);
+function Menu(props) {
+  const [tickets, info, contact] = props;
+  return (
+    <div id="menu">
+      <div id="menu_inner">
+        <div className="menu_button_wrapper">
+          <a href="localhost:5000" className="menu_button">{ tickets }</a>
+        </div>
+        <div className="menu_button_wrapper">
+          <a href="localhost:5000" className="menu_button">{ info }</a>
+        </div>
+        <div className="menu_button_wrapper">
+          <a href="localhost:5000" className="menu_button">{ contact }</a>
+        </div>
+      </div>
+    </div>
+  );
+}
 
+function Content() {
+  return (
+    <div>
+      <h2>Title</h2>
+      <p>body text</p>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div id="footer">
+      <div id="footer_inner">
+        <a href="#localhost:5000" className="footer_link">footer link</a>
+      </div>
+    </div>
+  );
+}
+
+function Background() {
+  return (
+    <div id="background">
+      <div>background div</div>
+    </div>
+  );
+}
 export default hot(module)(App);
