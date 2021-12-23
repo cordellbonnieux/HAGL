@@ -3,11 +3,15 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  const con = {
+    hello: 'goodbye',
+    poop: 'pee',
+  };
   return (
     <div>
       <h1>Have A Good Laugh Festival</h1>
       <Menu tickets="Tickets" info="Info" contact="Contact" />
-      <Content />
+      <Content one={con.hello} two={con.poop} />
       <Footer />
       <Background />
     </div>
@@ -15,7 +19,6 @@ function App() {
 }
 
 function Menu(props) {
-  //const [tickets, info, contact] = props;
   return (
     <div id="menu">
       <div id="menu_inner">
@@ -33,14 +36,28 @@ function Menu(props) {
   );
 }
 
-function Content() {
+function Content({ one, two }) {
   return (
     <div>
-      <h2>Title</h2>
-      <p>body text</p>
+      <h2>{ one }</h2>
+      <p>{ two }</p>
     </div>
   );
 }
+
+Content.propTypes = {
+  one: React.propTypes.String.isRequired,
+  two: React.propTypes.String.isRequired,
+};
+
+// Since one and two are REQUIRED
+// there is no need to have a default value
+/*
+Content.defaultProps = {
+  one: 'one',
+  two: 'two',
+};
+*/
 
 function Footer() {
   return (
