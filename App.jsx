@@ -3,14 +3,10 @@ import React from 'react';
 import './App.css';
 
 function App() {
-  const data = {
-    siteName: 'Have A Good Laugh',
-    menu: ['Tickets', 'Info', 'Contact'],
-  };
   return (
     <div>
-      <p>{ data.siteName }</p>
-      <Menu tickets={data.menu[0]} info={data.menu[1]} contact={data.menu[2]} />
+      <h1>Have A Good Laugh Festival</h1>
+      <Menu tickets="Tickets" info="Info" contact="Contact" />
       <Content />
       <Footer />
       <Background />
@@ -19,18 +15,18 @@ function App() {
 }
 
 function Menu(props) {
-  const [tickets, info, contact] = props;
+  //const [tickets, info, contact] = props;
   return (
     <div id="menu">
       <div id="menu_inner">
         <div className="menu_button_wrapper">
-          <a href="localhost:5000" className="menu_button">{ tickets }</a>
+          <a href="localhost:5000" className="menu_button">{ props.tickets }</a>
         </div>
         <div className="menu_button_wrapper">
-          <a href="localhost:5000" className="menu_button">{ info }</a>
+          <a href="localhost:5000" className="menu_button">{ props.info }</a>
         </div>
         <div className="menu_button_wrapper">
-          <a href="localhost:5000" className="menu_button">{ contact }</a>
+          <a href="localhost:5000" className="menu_button">{ props.contact }</a>
         </div>
       </div>
     </div>
@@ -50,7 +46,7 @@ function Footer() {
   return (
     <div id="footer">
       <div id="footer_inner">
-        <a href="#localhost:5000" className="footer_link">footer link</a>
+        <a href="localhost:5000" className="footer_link">footer link</a>
       </div>
     </div>
   );
@@ -63,4 +59,5 @@ function Background() {
     </div>
   );
 }
+
 export default hot(module)(App);
