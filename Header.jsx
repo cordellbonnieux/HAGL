@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Header(props) {
+function Header() {
   return (
-    <div className="header">
-      <h1 className="siteTitle">{ props.title }</h1>
+    <div id="header">
+      <h1 className="siteTitle font_glass">Have A Good Laugh</h1>
     </div>
   );
 }

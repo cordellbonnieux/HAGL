@@ -1,3 +1,56 @@
+@font-face {
+  font-family: "Glass Houses";
+  src: local("Glass Houses"),
+  url("./fonts/glashou.ttf") format("truetype");
+}
+
+.font_glass {
+  font-family: "Glass Houses";
+}
+
+body {
+  background-color: white;
+  margin:0;
+  color: black;
+}
+
+a {
+  color:red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  text-decoration: wavy underline;
+}
+
 .App {
-  padding: 20px;
+
+}
+
+#header {
+  background-image: url("./images/ass.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  width:100%;
+  min-height:300px;
+  color:white;
+
+}
+
+#menu {
+  background-color: red;
+  padding:10px 5px;
+}
+
+.menu_title {
+  color: white;
+}
+
+.menu_button {
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  margin: 5px;
+  text-align:center;
 }

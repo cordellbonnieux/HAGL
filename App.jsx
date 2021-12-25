@@ -1,55 +1,37 @@
 import { hot } from 'react-hot-loader';
 import React from 'react';
+import './fonts/glashou.ttf';
 import './App.css';
+import Menu from './Menu';
+import Header from './Header';
 
 function App() {
-  const con = {
-    hello: 'goodbye',
-    poop: 'pee',
-  };
   return (
     <div>
-      <h1>Have A Good Laugh Festival</h1>
-      <Menu tickets="Tickets" info="Info" contact="Contact" />
-      <Content one={con.hello} two={con.poop} />
+      <Header />
+      <Menu />
+      <Content />
       <Footer />
       <Background />
     </div>
   );
 }
 
-function Menu(props) {
-  return (
-    <div id="menu">
-      <div id="menu_inner">
-        <div className="menu_button_wrapper">
-          <a href="localhost:5000" className="menu_button">{ props.tickets }</a>
-        </div>
-        <div className="menu_button_wrapper">
-          <a href="localhost:5000" className="menu_button">{ props.info }</a>
-        </div>
-        <div className="menu_button_wrapper">
-          <a href="localhost:5000" className="menu_button">{ props.contact }</a>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Content({ one, two }) {
+function Content() {
   return (
     <div>
-      <h2>{ one }</h2>
-      <p>{ two }</p>
+      <h2>content title</h2>
+      <p>lorem ipsum here</p>
     </div>
   );
 }
 
+/*
 Content.propTypes = {
   one: React.propTypes.String.isRequired,
   two: React.propTypes.String.isRequired,
 };
-
+*/
 // Since one and two are REQUIRED
 // there is no need to have a default value
 /*
