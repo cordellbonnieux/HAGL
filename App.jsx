@@ -7,21 +7,32 @@ import Header from './Header';
 
 function App() {
   return (
-    <div>
+    <div id="container">
       <Header />
       <Menu />
       <Content />
+      <Bottom />
       <Footer />
-      <Background />
     </div>
   );
 }
 
 function Content() {
   return (
-    <div>
-      <h2>content title</h2>
-      <p>lorem ipsum here</p>
+    <div id="content">
+      <div id="content_left">
+        <div className="content_left_inner">
+          <h1>Hello there world</h1>
+          <p>ipsum lorem lorem ipsum</p>
+        </div>
+      </div>
+      <div id="content_right">
+        <div className="content_right_inner">
+          <div className="content_left_img"></div>
+          <div className="content_left_img"></div>
+          <div className="content_left_img"></div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -41,20 +52,20 @@ Content.defaultProps = {
 };
 */
 
+function Bottom() {
+  return (
+    <div id="bottom">
+      <div className="bottom_img"></div>
+    </div>
+  );
+}
+
 function Footer() {
   return (
     <div id="footer">
       <div id="footer_inner">
         <a href="localhost:5000" className="footer_link">footer link</a>
       </div>
-    </div>
-  );
-}
-
-function Background() {
-  return (
-    <div id="background">
-      <div>background div</div>
     </div>
   );
 }

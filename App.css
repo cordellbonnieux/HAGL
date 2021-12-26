@@ -24,6 +24,10 @@ a:hover {
   text-decoration: wavy underline;
 }
 
+#container {
+  width:100%;
+}
+
 #header {
   background-image: url("./images/ass.jpg");
   background-repeat:no-repeat;
@@ -64,4 +68,37 @@ a:hover {
   padding: 10px;
   margin: 5px;
   text-align:center;
+}
+
+#bottom {
+
+}
+
+.bottom_img {
+  background-image: url("./images/meuco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:200px;
+}
+
+#footer {
+  background-color:red;
+}
+/*
+#content {
+  display:flex;
+  align-items: stretch;
+}
+*/
+/*
+* small screens
+*/
+#content {
+  display:block;
+}
+.content_left {
+  width:100%;
+}
+.content_right {
+  display:none;
 }
