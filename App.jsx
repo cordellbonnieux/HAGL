@@ -29,9 +29,9 @@ function Content() {
       </div>
       <div id="content_right">
         <div className="content_right_inner">
-          <div className="content_left_img"></div>
-          <div className="content_left_img"></div>
-          <div className="content_left_img"></div>
+          <div className="content_left_img" />
+          <div className="content_left_img" />
+          <div className="content_left_img" />
         </div>
       </div>
     </div>
@@ -65,7 +65,9 @@ function Footer() {
   return (
     <div id="footer">
       <div id="footer_inner">
-        <a href="localhost:5000" className="footer_link">footer link</a>
+        <p>
+          All Photos by <a href="https://misviephoto.myportfolio.com/work" target="_blank" className="footer_link">Misvie Photography</a>
+        </p>
       </div>
     </div>
   );

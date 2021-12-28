@@ -26,6 +26,7 @@ a:hover {
 
 #container {
   width:100%;
+  overflow:hidden;
 }
 
 #header {
@@ -36,13 +37,18 @@ a:hover {
   color:white;
 }
 
-.header_inner {
-  background:rgba(0.0,0.0,0.0,0.3);
+#header_inner {
+  background:rgba(0.0,0.0,0.0,0.5);
   min-height:300px;
+  max-width:900px;
+}
+
+#header_inner_text {
+  width:319px;
 }
 
 .header_title {
-  font-size:3.5em;
+  font-size:5em;
   margin:0;
   padding:15% 5% 1% 5%;
 }
@@ -55,7 +61,44 @@ a:hover {
 
 #menu {
   background-color: red;
-  padding:10px 5px;
+  padding:5px;
+  font-size:1.2em;
+}
+/*
+* center for over 900px
+*/
+#menu_bar {
+  display:flex;
+  align-items:baseline;
+  justify-content: center;
+  flex-wrap: nowrap;
+  max-width:900px;
+}
+
+/*
+* main menu
+*/
+#menu_inner {
+  display:none;
+}
+
+/*
+* adjust to center 900px for larger screens
+*/
+#menu_mobile_button {
+  width:100%;
+  display:flex;
+  justify-content: right;
+}
+
+/*
+* adjust to center 900px for larger screens
+*/
+#menu_title_wrapper {
+  width:100%;
+  display:flex;
+  justify-content: left;
+
 }
 
 .menu_title {
@@ -105,9 +148,21 @@ a:hover {
 #content {
   display:block;
 }
+
 .content_left {
   width:100%;
 }
+
 .content_right {
   display:none;
+}
+
+#footer {
+  color:white;
+  text-align:center;
+}
+
+#footer a {
+  color:white;
+  text-decoration: underline;
 }
