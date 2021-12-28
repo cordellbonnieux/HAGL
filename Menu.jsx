@@ -1,6 +1,9 @@
 import React from 'react';
+import infoClick from './info';
 
 function Menu() {
+  const info = <div className="menu_button font_glass">Info</div>;
+  info.addEventListener('click', infoClick());
   return (
     <div id="menu">
       <div id="menu_bar">
@@ -15,7 +18,7 @@ function Menu() {
       </div>
       <div id="menu_inner">
         <div className="menu_button_wrapper">
-          <div className="menu_button font_glass">Info</div>
+          { info }
         </div>
         <div className="menu_button_wrapper">
           <div className="menu_button font_glass">Tickets</div>
