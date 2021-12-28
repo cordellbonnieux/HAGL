@@ -113,29 +113,6 @@ a:hover {
   text-align:center;
 }
 
-#bottom {
-  min-height:200px;
-}
-
-.bottom_img {
-  background-image: url("./images/meuco.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height:200px;
-  position:fixed;
-  bottom:0;
-  width:100%;
-  z-index: -3;
-}
-
-#footer {
-  background-color:red;
-  width:100%;
-  bottom:0;
-  position:fixed;
-  z-index:150;
-  height:35px;
-}
 /*
 #content {
   display:flex;
@@ -157,9 +134,37 @@ a:hover {
   display:none;
 }
 
+#bottom {
+  min-height:200px;
+}
+
+.bottom_img {
+  background-image: url("./images/meuco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:200px;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  z-index: -3;
+}
+
 #footer {
+  background-color:red;
+  width:100%;
+  bottom:0;
+  position:fixed;
+  z-index:150;
   color:white;
   text-align:center;
+}
+
+#footer_inner {
+  padding:10px;
+}
+
+#footer_cred {
+  margin: 0;
 }
 
 #footer a {
