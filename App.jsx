@@ -6,11 +6,12 @@ import Menu from './Menu';
 import Header from './Header';
 
 function App() {
+  let content = <Content />;
   return (
     <div id="container">
       <Header />
       <Menu />
-      <Content />
+      {content}
       <Bottom />
       <Footer />
     </div>

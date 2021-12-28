@@ -71,7 +71,7 @@ a:hover {
 }
 
 #bottom {
-
+  min-height:200px;
 }
 
 .bottom_img {
@@ -79,10 +79,19 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   min-height:200px;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  z-index: -3;
 }
 
 #footer {
   background-color:red;
+  width:100%;
+  bottom:0;
+  position:fixed;
+  z-index:150;
+  height:35px;
 }
 /*
 #content {
