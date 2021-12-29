@@ -79,7 +79,7 @@ a:hover {
 * main menu
 */
 #menu_inner {
-  /*display:none;*/
+  display:none;
 }
 
 /*
@@ -126,8 +126,10 @@ a:hover {
   display:block;
 }
 
-.content_left {
+#content_left {
   width:100%;
+  overflow:hidden;
+  background-color:white;
 }
 
 .content_right {
