@@ -9,9 +9,11 @@
 }
 
 body {
-  background-color: white;
   margin:0;
   color: black;
+  background-image: url("./images/meuco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
@@ -30,7 +32,7 @@ a:hover {
 }
 
 #header {
-  background-image: url("./images/ass.jpg");
+  background-image: url("./images/fatum.jpg");
   background-repeat:no-repeat;
   background-size:cover;
   min-height:300px;
@@ -40,7 +42,7 @@ a:hover {
 #header_inner {
   background:rgba(0.0,0.0,0.0,0.5);
   min-height:300px;
-  max-width:900px;
+  max-width:1000px;
 }
 
 #header_inner_text {
@@ -72,7 +74,7 @@ a:hover {
   align-items:baseline;
   justify-content: center;
   flex-wrap: nowrap;
-  max-width:900px;
+  max-width:1000px;
 }
 
 /*
@@ -123,23 +125,86 @@ a:hover {
 * small screens
 */
 #content {
-  display:block;
+  display:flex;
+  flex-wrap: wrap;
 }
 
 #content_left {
-  width:100%;
+  max-width:1000px;
   overflow:hidden;
   background-color:white;
 }
 
-.content_right {
-  display:none;
+#content_right {
+  width:auto;
+}
+
+.content_right_inner {
+
+}
+
+.content_right_img {
+  width:100%;
+  display:block;
+  margin:35px auto;
+}
+
+/*
+* Tickets
+*/
+
+#tickets_inner {
+  text-align:center;
+}
+
+#flyer2022 {
+  width:100%;
+  max-width:600px;
+}
+
+
+/* 
+* Old HAGL flyers
+*/
+
+#oldFlyers {
+  display:flex;
+  flex-wrap: wrap;
+  align-items:center;
+}
+
+.oldFlyer {
+  width: 190px;
+  background-size: contain;
+  height: 300px;
+  background-repeat: no-repeat;
+  margin:5px auto;
+}
+
+#hagl1 {
+  background-image: url("./images/flyers/hagl1.jpg");
+}
+
+#hagl2 {
+  background-image: url("./images/flyers/hagl2.jpg");
+}
+
+#hagl3 {
+  background-image: url("./images/flyers/hagl3.jpg");
+}
+
+#hagl4 {
+  background-image: url("./images/flyers/hagl4.jpg");
+}
+
+#hagl5 {
+  background-image: url("./images/flyers/hagl5.jpg");
 }
 
 #bottom {
   min-height:200px;
 }
-
+/*
 .bottom_img {
   background-image: url("./images/meuco.jpg");
   background-repeat: no-repeat;
@@ -150,7 +215,7 @@ a:hover {
   width:100%;
   z-index: -3;
 }
-
+*/
 #footer {
   background-color:red;
   width:100%;

@@ -15,7 +15,13 @@ export default function Info() {
             bands from around the world for 3 days every June, since 2016.
           </p>
           <h3>Flyers/line-ups from previous years:</h3>
-          <img src="./images/flyers/hagl1.jpg" alt="Have A Good Laugh 2016" />
+            <div id="oldFlyers">
+            <div id="hagl1" className="oldFlyer"/>
+            <div id="hagl2" className="oldFlyer"/>
+            <div id="hagl3" className="oldFlyer"/>
+            <div id="hagl4" className="oldFlyer"/>
+            <div id="hagl5" className="oldFlyer"/>
+          </div>
         </div>
         <div id="info_inner_can">
           <h2>Can my band play Have A Good Laugh?</h2>
