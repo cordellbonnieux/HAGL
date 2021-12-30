@@ -3,6 +3,7 @@ import React from 'react';
 import './fonts/glashou.ttf';
 import './App.css';
 import Header from './Header';
+import Menu from './Menu';
 import Info from './Info';
 import Tickets from './Tickets';
 import Right from './Right';
@@ -11,7 +12,7 @@ import LineUp from './LineUp';
 function App() {
   return (
     <div id="container">
-      <Header />
+      <Menu />
       <Content />
       <Footer />
     </div>
@@ -34,7 +35,7 @@ function Content() {
     </div>
   );
 }
-
+/*
 function Bottom() {
   return (
     <div id="bottom">
@@ -42,7 +43,7 @@ function Bottom() {
     </div>
   );
 }
-
+*/
 function Footer() {
   return (
     <div id="footer">

@@ -30,6 +30,7 @@ a:hover {
 #container {
   width:100%;
   overflow:hidden;
+  margin-top:5%;
 }
 
 #header {
@@ -68,16 +69,21 @@ a:hover {
   background-color: red;
   padding:5px;
   font-size:1.2em;
+  position:fixed;
+  top:0;
+  width:100%;
 }
 /*
 * center for over 900px
 */
 #menu_bar {
   display:flex;
-  align-items:baseline;
+  align-items:center;
   justify-content: center;
   flex-wrap: nowrap;
   max-width:1000px;
+  margin:0 auto;
+  padding:0 5px;
 }
 
 /*
@@ -209,7 +215,9 @@ a:hover {
 .section_dark {
   background-image: url('./images/assets/texture_dark.jpg');
   background-repeat: repeat;
+  /*
   margin:15px 5px;
+  */
   color:white;
   padding:35px 25px;
 }
@@ -241,8 +249,10 @@ a:hover {
   background-color:red;
   width:100%;
   bottom:0;
+  /*
   position:fixed;
   z-index:150;
+  */
   color:white;
   text-align:center;
 }
@@ -260,13 +270,15 @@ a:hover {
   text-decoration: underline;
 }
 
-
-
 /*
 *
 * BAND LOGOS
 *
 */
+
+#lineUp_container {
+  text-align:center;
+}
 
 #lineUp {
   display:flex;
