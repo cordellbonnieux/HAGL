@@ -4,7 +4,7 @@
   url("./fonts/glashou.ttf") format("truetype");
 }
 
-.font_glass {
+.font_glass, h1, h2, h3, h4, h5, h6 {
   font-family: "Glass Houses";
 }
 
@@ -14,6 +14,7 @@ body {
   background-image: url("./images/meuco.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 a {
@@ -32,13 +33,15 @@ a:hover {
 }
 
 #header {
+  /*
   background-image: url("./images/fatum.jpg");
   background-repeat:no-repeat;
-  background-size:cover;
+  background-size:center;
+  */
   min-height:300px;
   color:white;
 }
-
+/*
 #header_inner {
   background:rgba(0.0,0.0,0.0,0.5);
   min-height:300px;
@@ -48,16 +51,16 @@ a:hover {
 #header_inner_text {
   width:319px;
 }
-
+*/
 .header_title {
   font-size:5em;
   margin:0;
-  padding:15% 5% 1% 5%;
+  padding:5% 5% 1% 5%;
 }
 
 .header_tagline {
   margin:0;
-  padding:0 5% 10% 5%;
+  padding:0 5% 5% 5%;
   font-size:1.5em;
 }
 
@@ -127,26 +130,25 @@ a:hover {
 #content {
   display:flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #content_left {
   max-width:1000px;
   overflow:hidden;
   background-color:white;
+  margin:10px auto 100px auto;
 }
 
 #content_right {
-  width:auto;
-}
-
-.content_right_inner {
-
+  max-width:600px;
+  margin:10px auto 100px auto;
 }
 
 .content_right_img {
   width:100%;
-  display:block;
-  margin:35px auto;
+  display:inline-block;
+  margin:10px auto;
 }
 
 /*
@@ -161,7 +163,6 @@ a:hover {
   width:100%;
   max-width:600px;
 }
-
 
 /* 
 * Old HAGL flyers
@@ -201,6 +202,26 @@ a:hover {
   background-image: url("./images/flyers/hagl5.jpg");
 }
 
+/*
+*  Info
+*/
+
+.section_dark {
+  background-image: url('./images/assets/texture_dark.jpg');
+  background-repeat: repeat;
+  margin:15px 5px;
+  color:white;
+  padding:35px 25px;
+}
+
+.info_inner_section {
+  max-width:1000px;
+}
+
+#faq {
+  text-align:center;
+}
+
 #bottom {
   min-height:200px;
 }
@@ -237,4 +258,173 @@ a:hover {
 #footer a {
   color:white;
   text-decoration: underline;
+}
+
+
+
+/*
+*
+* BAND LOGOS
+*
+*/
+
+#lineUp {
+  display:flex;
+  width:100%;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.band_container {
+  max-width:333px;
+  margin:10px;
+  padding:10px 0;
+}
+
+.band_logo {
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position:center;
+  width:100%;
+  min-height:100px;
+}
+
+#toytiger {
+  background-image: url("./images/logos/toy_tiger.png");
+}
+
+#crosshairs {
+  background-image: url("./images/logos/crosshairs.png");
+}
+
+#schedule1 {
+  background-image: url("./images/logos/schedule1.png");
+}
+
+#terminalcityrats {
+  background-image: url("./images/logos/terminal_city_rats.png");
+}
+
+#bétonarmé {
+  background-image: url("./images/logos/beton_arme.png");
+}
+
+#forcemajeure {
+  background-image: url("./images/logos/force_majeure.png");
+}
+
+#kominternsect {
+  background-image: url("./images/logos/komintern_sect.png");
+}
+
+#adrenochrome {
+  background-image: url("./images/logos/adrenochrome.png");
+}
+
+#themoor {
+  background-image: url("./images/logos/the_moor.png");
+}
+
+#voltage {
+  background-image: url("./images/logos/voltage.png");
+}
+
+#deadwolff {
+  background-image: url("./images/logos/deadwolff.png");
+}
+
+#metalian {
+  background-image: url("./images/logos/metallian.png");
+}
+
+#smuther {
+  background-image: url("./images/logos/smuther.png");
+}
+
+#hope {
+  background-image: url("./images/logos/hope.png");
+}
+
+#manofico {
+  background-image: url("./images/logos/manofico.png");
+}
+
+#phane {
+  background-image: url("./images/logos/phane.png");
+}
+
+#fractured {
+  background-image: url("./images/logos/fractured.png");
+}
+
+#vaxine {
+  background-image: url("./images/logos/vaxine.png");
+}
+
+#löckheed {
+  background-image: url("./images/logos/lockheed.png");
+}
+
+#oipolloi {
+  background-image: url("./images/logos/oi_polloi.png");
+}
+
+#disposal {
+  background-image: url("./images/logos/disposal.png");
+}
+
+#hellbender {
+  background-image: url("./images/logos/hellbender.png");
+}
+
+#siegefire {
+  background-image: url("./images/logos/siege_fire.png");
+}
+
+#hellishinferno {
+  background-image: url("./images/logos/hellish_inferno.png");
+}
+
+#warkrusher {
+  background-image: url("./images/logos/warkrusher.png");
+}
+
+#languid {
+  background-image: url("./images/logos/languid.png");
+}
+
+#brutalize {
+  background-image: url("./images/logos/brutalize.png");
+}
+
+#krigsulvar {
+  background-image: url("./images/logos/krigsulvar.png");
+}
+
+#horrendous3d {
+  background-image: url("./images/logos/horrendous3d.png");
+}
+
+#frantic {
+  background-image: url("./images/logos/frantic.png");
+}
+
+#collapsed {
+  background-image: url("./images/logos/collapsed.png");
+}
+
+#endresult {
+  background-image: url("./images/logos/end_result.png");
+}
+
+#warplague {
+  background-image: url("./images/logos/war_plague.png");
+}
+
+#sexdwarf {
+  background-image: url("./images/logos/sex_dwarf.png");
+}
+
+#deadcells {
+  background-image: url("./images/logos/deadcells.png");
 }

@@ -2,12 +2,12 @@ import React from 'react';
 
 export default function Info() {
   return (
-    <div id="info">
+    <div id="info" className="section_dark">
       <div id="info_inner">
         <div id="info_title">
-          <h1 id="faq">F.A.Q.</h1>
+          <h1 id="faq">Info and F.A.Q.'s</h1>
         </div>
-        <div id="info_inner_what">
+        <div id="info_inner_what" className="info_inner_section">
           <h2>What is Have A Good Laugh?</h2>
           <p>
             Have A Good Laugh is a D.I.Y. not-for-profit punk festival in Vancouver, BC, Canada.
@@ -23,7 +23,7 @@ export default function Info() {
             <div id="hagl5" className="oldFlyer"/>
           </div>
         </div>
-        <div id="info_inner_can">
+        <div id="info_inner_can" className="info_inner_section">
           <h2>Can my band play Have A Good Laugh?</h2>
           <p>
             Planning for Have A Good Laugh usually starts in August the year prior,
@@ -32,20 +32,20 @@ export default function Info() {
             send us your music during this period.
           </p>
         </div>
-        <div id="info_inner_when">
+        <div id="info_inner_when" className="info_inner_section">
           <h2>When can I buy tickets?</h2>
           <p>
             Tickets go on sale, right here on Febuary 5th.
           </p>
         </div>
-        <div id="info_inner_where">
+        <div id="info_inner_where" className="info_inner_section">
           <h2>What venues will the fest be hosted at?</h2>
           <p>
             Check back here for updates, all locations, times etc will be posted
             here once we figure it all out.
           </p>
         </div>
-        <div id="info_inner_allAges">
+        <div id="info_inner_allAges" className="info_inner_section">
           <h2>Will Have A Good Laugh be all ages this year?</h2>
           <p>
             That is our plan, however we are currently working out the 

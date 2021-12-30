@@ -6,13 +6,13 @@ import Header from './Header';
 import Info from './Info';
 import Tickets from './Tickets';
 import Right from './Right';
+import LineUp from './LineUp';
 
 function App() {
   return (
     <div id="container">
       <Header />
       <Content />
-      <Bottom />
       <Footer />
     </div>
   );
@@ -24,6 +24,7 @@ function Content() {
       <div id="content_left">
         <div className="content_left_inner">
           <Tickets />
+          <LineUp />
           <Info />
         </div>
       </div>
