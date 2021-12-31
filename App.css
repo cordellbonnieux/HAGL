@@ -119,9 +119,18 @@ a:hover {
 .menu_button {
   color: white;
   border: 1px solid white;
+  background-color:transparent;
   padding: 10px;
-  margin: 5px;
+  margin: 5px 5px 4px 5px;
   text-align:center;
+  transition: 0.5s;
+}
+
+#menu a:hover {
+  background-color:white!important;
+  color:red;
+  text-decoration:none!important;
+  cursor:pointer;
 }
 
 /*
