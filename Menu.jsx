@@ -22,7 +22,7 @@ export default function Menu() {
           <div className="menu_title font_glass">HAVE A GOOD LAUGH</div>
         </div>
         <div id="menu_mobile_button">
-          <a onClick={mobileMenu} className="menu_button font_glass" id="menuBtn" type="button">Menu</a>
+          <button onClick={mobileMenu} className="menu_button font_glass" id="menuBtn" type="button">Menu</button>
         </div>
         <div id="menu_right_spacer" />
       </div>
