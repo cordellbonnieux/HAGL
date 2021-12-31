@@ -3,19 +3,20 @@ import data from './data/lineup2022.json';
 
 export default function LineUp() {
   const output = [];
-  /*
-  const [bands] = data.bands;
-  */
+  const { bands } = data;
   for (let i = 0; i < data.bands.length; i += 1) {
+    let { music } = bands[i];
+    const { name, location } = bands[i];
     /*
-    const [band] = bands[i];
-    const [name, location, logo, music] = band;
-    */
     const name = data.bands[i].name;
     const location = data.bands[i].location;
-    const music = data.bands[i].music;
+    let music = data.bands[i].music;
+    */
     let idName = name.split(' ').join('').replace('//', '').replace('?', '');
     idName = idName.toLowerCase();
+    if (music.length < 1) {
+      music = false;
+    }
     output.push(
       <div className="band_container">
         <a href={music} target="_blank" rel="noreferrer">

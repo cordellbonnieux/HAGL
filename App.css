@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
 @font-face {
   font-family: "Glass Houses";
   src: local("Glass Houses"),
@@ -9,6 +11,7 @@
 }
 
 body {
+  font-family: 'PT Serif';
   margin:0;
   color: black;
   background-image: url("./images/meuco.jpg");
@@ -142,6 +145,12 @@ a:hover {
   color:red;
   text-decoration:none!important;
   cursor:pointer;
+}
+/*
+* Hide contact menu item and area
+*/
+.menu_button_wrapper_contact, #contact {
+  display:none;
 }
 
 /*

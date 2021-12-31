@@ -7,11 +7,9 @@ export default function Menu() {
     if (openMenu) {
       setOpenMenu(false);
       menuBtns.style.display = 'none';
-      console.log(openMenu);
     } else {
       setOpenMenu(true);
       menuBtns.style.display = 'block';
-      console.log(openMenu);
     }
   }
   return (
@@ -27,17 +25,17 @@ export default function Menu() {
         <div id="menu_right_spacer" />
       </div>
       <div id="menu_inner">
-        <div className="menu_button_wrapper">
+        <div className="menu_button_wrapper menu_button_wrapper_tickets">
           <a href="#tickets" className="menu_button font_glass">Tickets</a>
         </div>
-        <div className="menu_button_wrapper">
+        <div className="menu_button_wrapper menu_button_wrapper_lineUp">
           <a href="#lineUp" className="menu_button font_glass">Line-up</a>
         </div>
-        <div className="menu_button_wrapper">
+        <div className="menu_button_wrapper menu_button_wrapper_info">
           <a href="#info" className="menu_button font_glass">Info</a>
         </div>
         <div className="menu_button_wrapper">
-          <a href="#contact" className="menu_button font_glass">Contact</a>
+          <a href="#contact" className="menu_button font_glass menu_button_wrapper_contact">Contact</a>
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ import Info from './Info';
 import Tickets from './Tickets';
 import Right from './Right';
 import LineUp from './LineUp';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function Content() {
           <Tickets />
           <LineUp />
           <Info />
+          <Contact />
         </div>
       </div>
       <div id="content_right">
