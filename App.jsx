@@ -2,7 +2,6 @@ import { hot } from 'react-hot-loader';
 import React from 'react';
 import './fonts/glashou.ttf';
 import './App.css';
-import Header from './Header';
 import Menu from './Menu';
 import Info from './Info';
 import Tickets from './Tickets';

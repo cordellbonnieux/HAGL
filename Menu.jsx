@@ -1,6 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function Menu() {
+export default function Menu() {
+  const [openMenu, setOpenMenu] = useState(false);
+  function mobileMenu() {
+    const menuBtns = document.getElementById('menu_inner');
+    if (openMenu) {
+      setOpenMenu(false);
+      menuBtns.style.display = 'none';
+      console.log(openMenu);
+    } else {
+      setOpenMenu(true);
+      menuBtns.style.display = 'block';
+      console.log(openMenu);
+    }
+  }
   return (
     <div id="menu">
       <div id="menu_bar">
@@ -9,7 +22,7 @@ function Menu() {
           <div className="menu_title font_glass">HAVE A GOOD LAUGH</div>
         </div>
         <div id="menu_mobile_button">
-          <div className="menu_button font_glass" id="menuBtn">Menu</div>
+          <button onClick={mobileMenu} className="menu_button font_glass" id="menuBtn" type="button">Menu</button>
         </div>
         <div id="menu_right_spacer" />
       </div>
@@ -30,5 +43,3 @@ function Menu() {
     </div>
   );
 }
-
-export default Menu;
